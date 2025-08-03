@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خطأ في الخادم - VIBE EMS Training</title>
+    <meta name="description" content="حدث خطأ في الخادم">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <span class="brand-text">VIBE EMS</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#about">عن المركز</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#services">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#contact">اتصل بنا</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav">
+                    <a href="/#booking" class="btn btn-primary">احجز جلستك الآن</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 500 Section -->
+    <section class="error-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="error-content">
+                        <h1 class="error-code">500</h1>
+                        <h2 class="error-title">خطأ في الخادم</h2>
+                        <p class="error-description">
+                            عذراً، حدث خطأ في الخادم. يرجى المحاولة مرة أخرى لاحقاً أو التواصل معنا.
+                        </p>
+                        
+                        <div class="error-actions">
+                            <a href="/" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-home me-2"></i>
+                                العودة للرئيسية
+                            </a>
+                            <a href="/#contact" class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-phone me-2"></i>
+                                اتصل بنا
+                            </a>
+                        </div>
+                        
+                        <div class="error-info mt-5">
+                            <div class="alert alert-info">
+                                <i class="fas fa-info-circle me-2"></i>
+                                <strong>معلومات مهمة:</strong>
+                                <ul class="mt-2 mb-0 text-start">
+                                    <li>يمكنك المحاولة مرة أخرى بعد بضع دقائق</li>
+                                    <li>إذا استمرت المشكلة، يرجى التواصل معنا</li>
+                                    <li>نعتذر عن الإزعاج ونعمل على حل المشكلة</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 VIBE EMS Training. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>تصميم وتطوير بواسطة فريق VIBE</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <style>
+        .error-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--dark-color), var(--danger-color));
+            color: var(--white-color);
+            padding-top: 100px;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .error-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .error-description {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+        
+        .error-actions {
+            margin-bottom: 3rem;
+        }
+        
+        .error-info .alert {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--white-color);
+        }
+        
+        .error-info ul {
+            list-style: none;
+            padding-right: 0;
+        }
+        
+        .error-info ul li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-right: 1.5rem;
+        }
+        
+        .error-info ul li::before {
+            content: '•';
+            position: absolute;
+            right: 0;
+            color: var(--accent-color);
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 5rem;
+            }
+            
+            .error-title {
+                font-size: 2rem;
+            }
+            
+            .error-actions .btn {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</body>
+</html>
